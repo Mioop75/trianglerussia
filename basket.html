@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="">
+<base href="/">
+<!--<link rel="shortcut icon" href="img/favicon.svg" type="image/svg">-->
+<link rel="stylesheet" href="./css/style.min.css?_v=20221020185200">
+<title>Корзина</title>
+</head>
+
+<body class="basket-page webp">
+	<div class="wrapper">
+		<header class="header">
+	<div class="container">
+		<div class="header__top">
+			<div class="row">
+				<div class="col-4">
+					<a href="/" class="header__logo">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+					</a>
+				</div>
+				<div class="col-5">
+					<div class="header__block">
+						<a href="#" class="header__block-phone">
+							<span>8 (800) 550-88-44</span>
+						</a>
+						<div class="header__block-item">
+							<p class="header__block-text">(Звонок бесплатный)</p>
+							<a href="#" class="header__block-text">График работы</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="d-flex">
+						<a href="#" class="header__button">
+							<div class="header__button-block">
+								<i class="icon-lock"></i>
+							</div>
+							<div class="header__button-text">Вход в личный кабинет</div>
+						</a>
+						<a href="#" class="header__button">
+							<div class="header__button-block header__button-basket">
+								<i class="icon-basket"></i>
+							</div>
+							<div class="header__button-text">Ваша <br> корзина</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__item menu__item--active"><a href="#" class="menu__link">ГЛАВНАЯ</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">ПРОДУКЦИЯ</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">о компании</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">доставка</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Опт</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Гарантия</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Шинный калькулятор</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+		<main class="main">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Главная</a></li>
+					<li class="breadcrumb-item active"><a href="#">Ваша корзина</a></li>
+				</ol>
+			</nav>
+			<div class="d-flex justify-content-between">
+				<h2 class="basket-page__title title">Корзина</h2>
+				<div class="d-flex">
+					<div class="basket-page__position">Позиций в корзине: <span>4 товара</span></div>
+					<button class="basket-page__clear btn-close" aria-label="Очистить">
+						<span>Очистить</span>
+					</button>
+				</div>
+			</div>
+			<table class="table table-basket">
+				<tr class="table__header table-basket__header">
+					<tr>Наименование</tr>
+					<tr>Стоимость</tr>
+					<tr>Количество, шт.</tr>
+					<tr>Сумма</tr>
+				</tr>
+				<tr>
+					<th>
+						<div class="row align-items-center">
+							<div class="col-3">
+								<picture><source srcset="img/card/01.webp" type="image/webp"><img src="img/card/01.png" alt="" class="table-basket__img"></picture>
+							</div>
+							<div class="col-3">
+								<div class="table-basket__name">Triangle PL01</div>
+								<div class="table-basket__text">195/45 R16 84W</div>
+							</div>
+						</div>
+					</th>
+					<th class="bold">4 800 руб.</th>
+					<th>
+						<div class="table-basket__counter counter">
+							<div class="counter-item">
+								<button class="counter-btn counter-btn-left"></button>
+								<div class="counter-block">
+									4
+								</div>
+								<div class="counter-info">шт.</div>
+								<button class="counter-btn counter-btn-right"></button>
+							</div>
+							<button class="counter-remove">Удалить</button>
+						</div>
+					</th>
+					<th>
+						19 200 руб.
+						<button class="table-basket__clear btn-close"></button>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<div class="row align-items-center">
+							<div class="col-3">
+								<picture><source srcset="img/card/01.webp" type="image/webp"><img src="img/card/01.png" alt="" class="table-basket__img"></picture>
+							</div>
+							<div class="col-3">
+								<div class="table-basket__name">Triangle PL01</div>
+								<div class="table-basket__text">195/45 R16 84W</div>
+							</div>
+						</div>
+					</th>
+					<th class="bold">4 800 руб.</th>
+					<th>
+						<div class="counter">
+							<div class="counter-item">
+								<button class="counter-btn counter-btn-left"></button>
+								<div class="counter-block">
+									4
+								</div>
+								<div class="counter-info">шт.</div>
+								<button class="counter-btn counter-btn-right"></button>
+							</div>
+							<button class="counter-remove">Удалить</button>
+						</div>
+					</th>
+					<th>
+						19 200 руб.
+						<button class="table-basket__clear btn-close"></button>
+					</th>
+				</tr>
+			</table>
+			<form class="form">
+				<h2 class="title form__title">оформление заказа</h2>
+				<div class="row">
+					<div class="col-5">
+						<div class="row">
+							<label for="staticEmail" class="col-sm-3 col-form-label">Ф.И.О. получателя: *</label>
+							<div class="col-7">
+								<input type="text" class="form-control" id="staticEmail">
+							</div>
+						</div>
+						<div class="row form__item">
+							<div class="col-5">
+								<div class="row">
+									<label for="staticEmail" class="col-sm-3 col-form-label">Телефон получателя: *</label>
+									<div class="col-7">
+										<input type="text" class="form-control" id="staticEmail">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row form__item">
+							<div class="col-5">
+								<div class="row">
+									<label for="staticEmail" class="col-sm-3 col-form-label">E-mail:</label>
+									<div class="col-7">
+										<input type="text" class="form-control" id="staticEmail">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row form__item">
+							<div class="col-5">
+								<div class="row">
+									<label for="staticEmail" class="col-sm-3 col-form-label">Адрес доставки: *</label>
+									<div class="col-7">
+										<input type="text" class="form-control" id="staticEmail">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__item">
+							<textarea class="form-control" placeholder="Комментарий к заказу"></textarea>
+						</div>
+					</div>
+					<div class="col-5">
+						<div class="row form__item">
+							<div class="col-3">
+								<div class="form__item-text">Способ оплаты *</div>
+							</div>
+							<div class="col-3">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="formRadio1" id="cashMoney">
+									<label class="form-check-label" for="cashMoney">
+										Наличными курьеру
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="formRadio1" id="transferforCard" checked disabled>
+									<label class="form-check-label" for="transferforCard">
+										Перевод с карты на карту Сбербанк
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="row form__item">
+							<div class="col-3">
+								<div class="form__item-text">Способ доставки *</div>
+							</div>
+							<div class="col-3">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="formRadio2" id="cashMoney">
+									<label class="form-check-label" for="cashMoney">
+										Доставка по Москве (Стоимость 400 руб.)
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="formRadio2" id="transferforCard" checked disabled>
+									<label class="form-check-label" for="transferforCard">
+										Доставка по России до терминала ТК в Москве: Деловые Линии, ПЭ
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="row form__item">
+							<div class="col-5">
+								<div class="form__count">Товаров на сумму: 38 400 РУБ.</div>
+								<div class="form__price">
+									Итого: копия
+									<span>38 800 руб.</span>
+								</div>
+							</div>
+							<div class="col-4">
+								<button class="btn btn-danger">Оформить заказ</button>
+							</div>
+						</div>
+						<div class="form__text">Нажимая на кнопку "Оформить заказ" <a href="#">Вы соглашаетесь с условиями</a></div>
+						<div class="form__info">* Поля, отмеченные звездочкой, обязательны к заполнению.</div>
+					</div>
+				</div>
+			</form>
+		</main>
+		<div class="footer">
+	<div class="container">
+		<div class="row footer__top">
+			<div class="col-6">
+				<a href="/" class="footer__logo">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+				</a>
+			</div>
+			<div class="col-6 footer__row">
+				<div class="footer__block">
+					<a href="#" class="footer__block-phone">
+						<span>8 (800) 550-88-44</span>
+					</a>
+					<div class="footer__block-item">
+						<p class="footer__block-text">(Звонок бесплатный)</p>
+						<a href="#" class="footer__block-text">График работы</a>
+					</div>
+				</div>
+				<button class="btn btn-primary footer__button-up">наверх</button>
+			</div>
+
+		</div>
+		<div class="row footer__bottom">
+			<div class="col-8">
+				<div class="footer__copy"><span>© 2022</span> Triangle Tyres Russia. Все права защищены.</div>
+			</div>
+			<div class="col-4 d-flex justify-content-end">
+				<div class="d-flex">
+					<a href="#" class="footer__button footer__button-email">
+						<div class="footer__button-block">
+							<i class="icon-e-mail"></i>
+						</div>
+						<div class="footer__button-text">shop@trianglerus.ru</div>
+					</a>
+					<a href="#" class="footer__button">
+						<div class="footer__button-block">
+							<i class="icon-lock"></i>
+						</div>
+						<div class="footer__button-text">Авторизация</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+</body>
+
+</html>
