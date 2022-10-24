@@ -1,0 +1,22 @@
+$navbar-light-color: var(--white);
+$navbar-light-hover-color: var(--red);
+$navbar-light-active-color: var(--white);
+$navbar-nav-link-padding-x: 25px;
+$navbar-nav-link-padding-y: 25px;
+
+.navbar {
+	.nav-item {}
+
+	.nav-link {
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+
+		&.active {
+			background-color: #5895DF;
+			padding: 10px;
+			border-radius: 15px;
+		}
+	}
+}

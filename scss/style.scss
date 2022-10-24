@@ -1,0 +1,71 @@
+@use 'sass:math';
+
+/*
+----------Variables-------------
+*/
+
+@import "modules/variables";
+
+/*
+----------Config-------------
+*/
+
+@import "modules/config";
+
+/*
+----------Base-------------
+*/
+
+@import "modules/fontIcon";
+
+@import "fonts";
+
+
+
+
+
+// Components
+
+@import "components/header";
+@import "components/navbar";
+@import "components/footer";
+@import "components/product";
+@import "components/badge";
+@import "components/breadcrumb";
+@import "components/button";
+
+// Sections
+
+@import "sections/banner";
+@import "sections/selection";
+@import "sections/about";
+
+
+// Pages
+
+@import "pages/delivery";
+@import "pages/basket";
+@import "pages/card-product";
+@import "pages/opt";
+@import "pages/product";
+@import "pages/products";
+
+
+
+/*
+---------Main-----------
+*/
+
+.main {
+  flex: 1 1 auto;
+	margin-bottom: 50px;
+}
+
+
+/*
+---------Bootstrap-----------
+*/
+
+@import "../lib/bootstrap-5.2.2/scss/bootstrap.scss";
+
+@import "modules/base";

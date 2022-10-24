@@ -1,0 +1,130 @@
+.selection {
+
+	// .selection__title
+
+	&__title {}
+
+	// .selection__block
+
+	&__block {
+		padding: 23px 40px;
+		background: #fff;
+		box-shadow: 0px 2px 7px 0px rgb(0, 0, 0, 0.5);
+		border-radius: 10px;
+		position: relative;
+	}
+
+	// .selection__tab
+
+	&__tab {
+		&:not(:last-child) {
+			margin-bottom: 45px;
+		}
+
+		.nav-item+.nav-item {
+			margin-left: 25px;
+		}
+
+		.nav-link {
+			border: none;
+			background: transparent;
+			font-weight: 800;
+			font-size: 16px;
+			color: var(--black);
+			text-transform: uppercase;
+
+			&.active {
+				color: var(--white);
+				background: var(--blue);
+				border-radius: 13px;
+			}
+		}
+
+		.btn {
+			border-radius: 50%;
+			width: 44px;
+			height: 44px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: none;
+			position: absolute;
+			top: 15px;
+			right: 36px;
+			padding: 0;
+
+			&.collapsed {
+				background: var(--red);
+
+				span {
+					clip-path: polygon(55% 100%, 0 0, 100% 0);
+				}
+			}
+
+			span {
+				width: 13px;
+				height: 9px;
+				background-color: var(--white);
+				clip-path: polygon(55% 0, 0 100%, 100% 100%);
+
+			}
+		}
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+
+		&-item:first-child {
+			flex-basis: 46%;
+		}
+	}
+
+	.collapse {}
+
+	// .selection__label
+
+	&__label {
+		margin-bottom: 20px;
+		margin-left: 15px;
+		line-height: 1;
+		color: #000;
+	}
+
+	.form-check-label {
+		font-weight: 400;
+	}
+
+	.form-check {
+		display: flex;
+	}
+
+	.form-check-input {
+		margin-right: 7px;
+	}
+
+	.form-check-label {
+		display: flex;
+		align-items: center;
+
+		svg,
+		use {
+			width: 17px;
+			height: 17px;
+			margin-left: 5px;
+		}
+	}
+}
+
+
+
+$nav-link-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-radius .15s ease-in-out;
+$form-select-padding-y: 10px;
+$form-select-padding-x: 20px;
+$form-select-font-weight: 400;
+$form-select-font-family: $defaultFont;
+$form-select-font-size: 14px;
+$form-select-border-radius: 20px;
+
+$form-check-input-bg: var(--white);
+$form-check-input-checked-bg-color: var(--blue);

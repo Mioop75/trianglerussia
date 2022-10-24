@@ -1,0 +1,13 @@
+.delivery-page {
+	.banner__slide {
+		background-image: url("../img/banner/02.jpg");
+	}
+}
+
+.delivery {
+
+	&__list {
+		list-style-type: disc;
+		padding-left: 18px;
+	}
+}
